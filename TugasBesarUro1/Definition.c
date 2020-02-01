@@ -7,7 +7,7 @@
 
 #include "gamerules.h"
 
-void Achtung()
+void Achtung()/*Game GUI*/
 {
 	printf("======================================TEPEBE SIMULEZEN=======================================\n");
 	printf("=============================================================================================\n");
@@ -18,12 +18,12 @@ void Achtung()
 	printf("8.BunDir (aawaoK)    \t\t\t 9. Danusan\n");
 	printf("10.GAMAIS             \t\t\t 11. DiLantik UroITB\n");
 }
-void Garis()
+void Garis()/*GUI*/
 {
 	printf("=============================================================================================\n");
 }
 
-void StartSetZero(Statistik *S)
+void StartSetZero(Statistik *S) /*Ini adalah status awal robot*/
 {
 	hapiness(*S) = 50;
 	health(*S) = 50;
@@ -31,7 +31,7 @@ void StartSetZero(Statistik *S)
 	social(*S) = 0;
 }
 
-void TampilanStat(Statistik S)
+void TampilanStat(Statistik S) /*Menampilkan keterangan status awal robot*/
 {
 	printf("Your Hilmys's Current Status : \n");
 	printf("Health : %d\n", S.health);
@@ -39,7 +39,7 @@ void TampilanStat(Statistik S)
 	printf("Hygine : %d\n", S.hygine );
 }
 
-void UTS(Statistik *S)
+void UTS(Statistik *S) /*Robot lagi ambis dan ansos supaya bisa belajar dengan serius*/
 {
 	social(*S) -= 20;
 	health(*S) -= 30;

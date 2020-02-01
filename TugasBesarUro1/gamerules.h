@@ -28,10 +28,10 @@ typedef struct
 
 /*Game Start Rule*/
 void Achtung();/*Game GUI(nivere)*/
-void Garis();
+void Garis();/*Game GUI*/
 
-void StartSetZero (Statistik *S);
-void TampilanStat(Statistik S);
+void StartSetZero (Statistik *S);/*menset status awal karakter*/
+void TampilanStat(Statistik S); /*membuat tampilan status awal robot*/
 
 //Kegiatan
 int Tidur (Statistik *P);

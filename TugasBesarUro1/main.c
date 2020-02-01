@@ -10,15 +10,15 @@
 int main()
 {
 	int x;
-	Statistik S1;
-	Achtung();
+	Statistik S1;/*Membuat variable data struct*/
+	Achtung();/*GUI*/
 	Garis();
 
-	StartSetZero(&S1);
-	TampilanStat(S1);
+	StartSetZero(&S1);/*Set Status awal robot*/
+	TampilanStat(S1);/*Menampilkan status awal robot*/
 
 	printf("Masukkan nilai 1: ");
 	scanf("d", &x);
-	UTS(&S1);
+	UTS(&S1);/*Ambis kuy*/
 	TampilanStat(S1);
 }
